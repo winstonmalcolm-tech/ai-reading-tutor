@@ -2,8 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:frontend/screens/auth.dart';
 import 'package:frontend/screens/home.dart';
-
-
 import 'package:firebase_core/firebase_core.dart';
 import 'package:vapi/vapi.dart' show VapiClient;
 import 'firebase_options.dart';
@@ -26,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Reader', debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
