@@ -8,7 +8,6 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:uuid/uuid.dart';
 import 'package:vapi/vapi.dart';
 import '../constants.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:async';
 import 'dart:math';
 enum SupportedLanguage { 
@@ -48,7 +47,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     final dio = Dio();
 
     final formData = FormData.fromMap({
-      'apikey': 'K82630750088957', // Replace with your OCR.space key
+      'apikey': OCRAPIKEY,
       'language': 'eng',
       'file': await MultipartFile.fromFile(file.path),
     });
