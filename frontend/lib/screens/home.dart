@@ -73,6 +73,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         },
       });
 
+      ScaffoldMessenger(child: const Text("Image uploaded successfully"),);
+
     } catch (e) {
       setState(() => extractedText = 'Error uploading image');
 
@@ -262,7 +264,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             children: [
               // Call bar
               Container(
-                color: Colors.black87.withOpacity(0.8),
+                color: Colors.blue,
                 padding:
                 const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Row(
